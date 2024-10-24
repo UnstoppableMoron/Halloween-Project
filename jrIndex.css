@@ -90,6 +90,19 @@ font-family: "Amatic SC", sans-serif;
    min-height:800px;
 }
 
+.hero{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.hero h2{
+   color: #bf3100
+   font-size: 1.8rem;
+   text-shadow: 2px 2px 6px #FFFFFF;
+   font-family: "Nosifer", sans-serif;
+   text-align: center;
+}
 /*-----Responsive Images-----*/
 img {
     width: 100%;
