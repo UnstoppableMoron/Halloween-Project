@@ -83,7 +83,7 @@ font-family: "Amatic SC", sans-serif;
 
 
 #hero{
-   background-image: url(/images/pumkin.jpeg);
+   background-image: url(images/pumkin.jpeg);
    background-repeat:no-repeat;
    background-size:cover;
    background-position-y:bottom;
@@ -97,8 +97,8 @@ font-family: "Amatic SC", sans-serif;
 }
 
 .hero h2{
-   color: #bf3100
-   font-size: 1.8rem;
+   color: #bf3100;
+   font-size: 1.8em;
    text-shadow: 2px 2px 6px #FFFFFF;
    font-family: "Nosifer", sans-serif;
    text-align: center;
@@ -108,15 +108,57 @@ img {
     width: 100%;
 }
 
+/*========================
+      CSS Grid Rules
+========================*/
+.container{
+   display: grid;
+}
+
+.one{
+   min-height: 250px;
+   background-color:#3c596c
+}
+
+.two{
+   min-height: 250px;
+   background-color:#fb8e08
+}
+
+.three{
+   min-height: 250px;
+   background-color: #0ede0a
+}
+
+.four{
+   min-height: 250px;
+   background-color: #850bc1
+}
+
+.five{
+   min-height: 250px;
+   background-color: #bf3100
+}
+
+.six{
+   min-height: 250px;
+   background-color: #8a350b
+}
+
+.seven{
+   min-height: 250px;
+   background-color: #fb8e08
+}
+
 /*-----Tablet Media Query-----*/
 @media screen and (min-width: 769px) {
 
-    .header,
-    .main-nav {
-        display: flex;
-    }
+
+   .main-nav {
+      display: flex;
+   }
  
-    .header{
+   .header{
       flex-direction: column;
       align-items: center;
       .header {
@@ -126,8 +168,48 @@ img {
       }
    }
 
-}
+   #hero{
+      min-height: 500px;
+   }
 
+   .hero h2{
+      font-size: 2.1rem;
+   }
+
+   .container{
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(100px,auto);
+   }
+   
+   .one{
+      grid-column: 1/3;
+   }
+
+   .two{
+      grid-column: 1/2;
+      grid-row: 2/4;
+   }
+
+   .three{
+      grid-column: 2/3;
+      grid-row: 2/4;
+   }
+
+   .four{
+      grid-column: 1/3;
+   }
+
+   .five{
+      grid-column: 1/3;
+   }
+
+   .six{
+      grid-column: 1/2;
+   }
+
+   .seven{
+      grid-column: 2/3;
+   }
 
 /*-----End of Tablet Media Query-----*/
 
