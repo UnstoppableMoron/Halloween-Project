@@ -57,22 +57,22 @@ font-family: "Amatic SC", sans-serif;
 }
  
 .main-nav a{
-    color: #96e194;
+    color: #3c596c;
     font-size: .99em;
 }
  
 .main-nav a:hover {
-    color: #0cc422;
+    color: #180bd6;
 }
  .logo a{
-   color:#0ede0a;
+   color:#3c596c;
  }
 
 .header {
     padding-top: .5em;
     padding-bottom: .5em;
     border: 1px solid #000000;
-    background-color: #850bc1;
+    background-color: #fb8e08;
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
 }
@@ -103,6 +103,65 @@ font-family: "Amatic SC", sans-serif;
    font-family: "Nosifer", sans-serif;
    text-align: center;
 }
+
+.one{
+   padding: 10%;
+   font-size: 1.8em;
+}
+
+.one p{
+   font-family: "Amatic SC", sans-serif;
+   margin-bottom: 1.2em;
+}
+
+.two{
+   padding: 10%;
+   font-size: 1.8em;
+}
+
+.two p{
+   font-family: "Amatic SC", sans-serif;
+   margin-bottom: 1.2em;
+}
+
+.four{
+   padding: 10%;
+   font-size: 1.8em;
+}
+
+.four p{
+   font-family: "Amatic SC", sans-serif;
+   margin-bottom: 1.8em;
+}
+
+.five{
+   padding: 10%;
+   font-size: 1.8em;
+}
+
+.five p{
+   font-family: "Amatic SC", sans-serif;
+   margin-bottom: 1.8em;
+}
+
+.seven{
+   padding: 10%;
+   font-size: 1.8em;
+}
+
+.seven p{
+   font-family: "Amatic SC", sans-serif;
+   margin-bottom: 1.8em;
+}
+
+h2{
+   font-family: "Sancreek", serif;
+   color:purple;
+}
+
+p{
+
+}
 /*-----Responsive Images-----*/
 img {
     width: 100%;
@@ -126,22 +185,22 @@ img {
 }
 
 .three{
-   min-height: 250px;
+   min-height: 450px;
    background-color: #0ede0a
 }
 
 .four{
    min-height: 250px;
-   background-color: #850bc1
+   background-color: #3c596c
 }
 
 .five{
    min-height: 250px;
-   background-color: #bf3100
+   background-color: #3c596c
 }
 
 .six{
-   min-height: 250px;
+   min-height: 450px;
    background-color: #8a350b
 }
 
@@ -222,6 +281,47 @@ img {
       justify-content: space-between;
    }
 }
+.container{
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.one{
+   grid-column: 1 / 4;
+}
+
+.two{
+   grid-column: 1 / 3;
+}
+
+.three{
+   grid-column: 3 / 4;
+   background-image: url(images/pumpkin\ 1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-x: left;
+   background-position-y: bottom;
+}
+
+.four{
+   grid-column: 1 / 4;
+}
+
+.five{
+   grid-column: 1 / 4;
+}
+
+.six{
+   grid-column: 1 / 2;
+   background-image: url(images/pumpkin\ 2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-x: left;
+   background-position-y: bottom;
+}
+
+.seven{
+   grid-column: 2 / 4;
+}
 /*-----End of Desktop Media Query-----*/
 
 /*-----Large Display Media Query-----*/
@@ -231,4 +331,13 @@ img {
       flex-direction: row;
       justify-content: space-between;
    }
+}
+/*-----End of Large Display Media Query-----*/
+
+footer{
+   margin-top: 0;
+   padding: 10%;
+   background-color: #3c596c;
+   color: #0e0d0a;
+   min-height: 300px;
 }
