@@ -51,15 +51,18 @@ a {
 
 .logo a,
 .main-nav a {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
+   padding: 10px 15px;
+   text-transform: uppercase;
+   display: block;
+}
+
+.logo{
+padding: 0px 60px;
 }
 
 .main-nav a{
-    color: #3c596c;
-    font-size: .99em;
+   color: #3c596c;
+   font-size: .99em;
 }
 
 .main-nav a:hover {
@@ -232,6 +235,10 @@ img {
 .seven{
    min-height: 250px;
    background-color: #fb8e08
+}
+
+.centeredText{
+   text-align: center;
 }
 
 /*-----Tablet Media Query-----*/
