@@ -41,12 +41,10 @@ a {
     font-size: 1.45em;
     color: #199d08;
     font-family: "Sancreek", serif;
-   
 }
 
 .main-nav {
     margin-top: 5px;
-
 }
 
 .logo a,
@@ -191,7 +189,7 @@ h2{
 }
 
 /*-----Responsive Images-----*/
-img {
+img{
     width: 100%;
 }
 
